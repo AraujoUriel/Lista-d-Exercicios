@@ -1,0 +1,12 @@
+code {
+    background-color: aqua;
+}
+
+.basic {
+    text-align: center;
+    position: relative;
+}
+
+p {
+    font-size: 20px;
+}
