@@ -20,7 +20,7 @@
 
         Deve aparecer apenas uma vez, no topo da página (antes de qualquer tag HTML).</p>
 
-    <h2>HTML Básico</h2>
+    <h2>HTML Cabeçalhos</h2>
 
     <p>Os títulos HTML são definidos com as tags <code>&lth1&gt</code> to <code>&lth6&gt</code>.
 
@@ -35,6 +35,91 @@
     <p>E assim por diante</p>
 
     <h2>HTML Elementos</h2>
+
+    <p>
+    <code>&lt;tagname&gt;</code> O conteúdo vai aqui...<code>&lt;/tagname&gt;</code>
+    <br>Exemplos de alguns elementos HTML:<br>
+    <code>&lt;h1&gt;</code> Meu primeiro título <code>&lt;/h1&gt;</code><br>
+    <code>&lt;p&gt;</code> Meu primeiro parágrafo. <code>&lt;/p&gt;</code>
+    </p>
+
+    <h2>Elementos HTML aninhados</h2>
+    <p>Os elementos HTML podem ser aninhados (isso significa que os elementos podem conter outros elementos).</p>
+
+    <p>Todos os documentos HTML consistem em elementos HTML aninhados.</p>
+
+    <p>O exemplo a seguir contém quatro elementos HTML (<code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>):</p>
+
+    <pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre>
+
+    <p><strong>Exemplo explicado</strong></p>
+
+    <p>O <code>&lt;html&gt;</code> elemento é o elemento raiz e define todo o documento HTML.</p>
+
+    <p>Possui uma tag inicial <code>&lt;html&gt;</code> e uma tag final <code>&lt;/html&gt;</code>.</p>
+
+    <p>Então, dentro do <code>&lt;html&gt;</code> elemento existe um <code>&lt;body&gt;</code> elemento:</p>
+
+    <pre>&lt;body&gt;
+
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+
+    &lt;/body&gt;
+    </pre>
+
+    <p>O <code>&lt;body&gt;</code> elemento define o corpo do documento.</p>
+
+    <p>Possui uma tag inicial <code>&lt;body&gt;</code> e uma tag final <code>&lt;/body&gt;</code>.</p>
+
+    <p>Então, dentro do <code>&lt;body&gt;</code> elemento existem outros dois elementos: <code>&lt;h1&gt;</code> e <code>&lt;p&gt;</code>:</p>
+
+    <pre>&lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+    </pre>
+
+    <h2>Atributos HTML</h2>
+    <p>Todos os elementos HTML podem ter atributos.</p>
+    <p>Os atributos fornecem informações adicionais sobre os elementos.</p>
+    <p>Os atributos são sempre especificados na tag inicial.</p>
+    <p>Os atributos geralmente vêm em pares nome/valor como: nome="valor".</p>
+
+    <p><strong>O atributo href</strong></p>
+    <p>A <code>&lt;a&gt;</code> tag define um hiperlink. O <code>href</code> atributo especifica o URL da página para a qual o link leva:</p>
+
+    <pre>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;
+    </pre>
+
+    <p>Você aprenderá mais sobre links em nosso capítulo Links HTML.</p>
+
+    <p><strong>O atributo src</strong></p>
+    <p>A <code>&lt;img&gt;</code> tag é usada para incorporar uma imagem em uma página HTML. O <code>src</code> atributo especifica o caminho para a imagem a ser exibida:</p>
+
+    <pre>&lt;img src="img_girl.jpg"&gt;
+    </pre>
+
+    <p>Existem duas maneiras de especificar o URL no atributo <code>src</code>:</p>
+
+    <ol>
+    <li>
+        <p>URL absoluta – Links para uma imagem externa hospedada em outro site. Exemplo: <code>src="https://www.w3schools.com/images/img_girl.jpg"</code>.</p>
+        <p><strong>Notas:</strong> Imagens externas podem estar protegidas por direitos autorais. Se você não obtiver permissão para usá-lo, poderá estar violando as leis de direitos autorais. Além disso, você não pode controlar imagens externas; ele pode ser removido ou alterado repentinamente.</p>
+    </li>
+    <li>
+        <p>URL relativo - Links para uma imagem hospedada no site. Aqui, o URL não inclui o nome de domínio. Se o URL começar sem barra, será relativo à página atual. Exemplo: <code>src="img_girl.jpg"</code>. Se o URL começar com uma barra, será relativo ao domínio. Exemplo: <code>src="/images/img_girl.jpg"</code>.</p>
+    </li>
+    </ol>
+
+
     </div>
 </body>
 </html>
