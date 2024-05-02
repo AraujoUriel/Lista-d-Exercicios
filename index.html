@@ -384,7 +384,8 @@
     <p>Uma imagem de favicon é exibida à esquerda do título da página na guia do navegador, como mostrado abaixo:</p>
 
     <h3>Exemplo de favicon</h3>
-    <p>[Imagem de exemplo do favicon]</p>
+    <p>Veja o icone do site como exempls de onde ficaria uma favicon e abaixo um exemplo de favicon</p>
+    <img src="exemplo.png" alt="250px">
     
 
     <p>Para adicionar um favicon ao seu site, salve sua imagem de favicon no diretório raiz do seu servidor web ou crie uma pasta no diretório raiz chamada "imagens" e salve sua imagem de favicon nesta pasta. Um nome comum para uma imagem de favicon é “favicon.ico”.</p>
@@ -479,6 +480,238 @@
     </tr>
     </table>
     </div>
+
+    <h2>Listas HTML</h2>
+    <p>As listas HTML permitem que os desenvolvedores da web agrupem um conjunto de itens relacionados em listas.</p>
+    <h3>Exemplo de Lista Não Ordenada</h3>
+    <div class="list-container">
+      
+      <ul>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Leite</li>
+      </ul>
+    </div>
+
+    <h3>Exemplo de Lista Ordenada</h3>
+    <div class="list-container">
+      <ol>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Leite</li>
+      </ol>
+    </div>
+
+    <h3>Lista HTML não ordenada</h3>
+    <p>Uma lista não ordenada começa com a <code>&lt;ul&gt;</code> tag. Cada item da lista começa com a <code>&lt;li&gt;</code> tag.</p>
+
+    <p>Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão.</p>
+
+    <h3>Exemplo</h3>
+    <div class="list-container">
+      <ul>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Leite</li>
+      </ul>
+    </div>
+
+    <h3>Lista HTML ordenada</h3>
+    <p>Uma lista ordenada começa com a <code>&lt;ol&gt;</code> tag. Cada item da lista começa com a <code>&lt;li&gt;</code> tag.</p>
+
+    <p>Os itens da lista serão marcados com números por padrão.</p>
+
+    <h3>Exemplo</h3>
+    <div class="list-container">
+      <ol>
+        <li>Café</li>
+        <li>Chá</li>
+        <li>Leite</li>
+      </ol>
+    </div>
+
+    <h2>Bloco HTML e Elementos Embutidos</h2>
+    <p>Cada elemento HTML possui um valor de exibição padrão, dependendo do tipo de elemento.</p>
+
+    <div class="block-elements-container">
+      <div>
+        <h3>Elementos em Nível de Bloco</h3>
+        <p>Um elemento em nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço (uma margem) antes e depois do elemento.</p>
+        <p>Um elemento de nível de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a direita tanto quanto possível).</p>
+        <p>Dois elementos de bloco comumente usados são: <code>&lt;p&gt;</code> e <code>&lt;div&gt;</code>.</p>
+        <p>O <code>&lt;p&gt;</code> elemento define um parágrafo em um documento HTML.</p>
+        <p>O <code>&lt;div&gt;</code> elemento define uma divisão ou seção em um documento HTML.</p>
+        <p>O elemento <code>&lt;p&gt;</code> é um elemento de nível de bloco.</p>
+        <p>O elemento <code>&lt;div&gt;</code> é um elemento de nível de bloco.</p>
+      </div>
+    </div>
+
+    <div class="inline-elements-container">
+      <span>
+        <h3>Elementos Embutidos</h3>
+        <p>Um elemento embutido não começa em uma nova linha.</p>
+        <p>Um elemento embutido ocupa apenas a largura necessária.</p>
+        <p>Este é um elemento <code>&lt;span&gt;</code> dentro de um parágrafo.</p>
+      </span>
+    </div>
+
+    <h2>Atributo de Classe HTML</h2>
+    <p>O atributo HTML class é usado para especificar uma classe para um elemento HTML.</p>
+    <p>Vários elementos HTML podem compartilhar a mesma classe.</p>
+
+    <div class="container">
+      <div>
+        <h3>Usando o atributo class</h3>
+        <p>O atributo class é frequentemente usado para apontar para um nome de classe em uma folha de estilo. Também pode ser usado por JavaScript para acessar e manipular elementos com o nome de classe específico.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <h3>Exemplo com elementos <code>&lt;div&gt;</code></h3>
+        <div class="city">
+          <h2>Londres</h2>
+          <p>Londres é a capital da Inglaterra.</p>
+        </div>
+
+        <div class="city">
+          <h2>Paris</h2>
+          <p>Paris é a capital da França.</p>
+        </div>
+
+        <div class="city">
+          <h2>Tóquio</h2>
+          <p>Tóquio é a capital do Japão.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <h3>Exemplo com elementos <code>&lt;span&gt;</code></h3>
+        <h1>Meu <span class="note">Importante</span> Título</h1>
+        <p>Este é um <span class="note">texto importante</span>.</p>
+      </div>
+    </div>
+
+    <h2>Atributo de Identificação HTML</h2>
+    <p>O atributo HTML idé usado para especificar um ID exclusivo para um elemento HTML.</p>
+    <p>Você não pode ter mais de um elemento com o mesmo id em um documento HTML.</p>
+
+    <div>
+      <div>
+        <h3>Usando o atributo id</h3>
+        <p>O atributo id especifica um ID exclusivo para um elemento HTML. O valor do atributo id deve ser exclusivo no documento HTML.</p>
+        <p>O atributo id é usado para apontar para uma declaração de estilo específica em uma folha de estilos. Também é usado por JavaScript para acessar e manipular o elemento com o id específico.</p>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <h3>Exemplo</h3>
+        <p>No exemplo a seguir temos um elemento <code>&lt;h1&gt;</code> que aponta para o nome do id “myHeader”. Este elemento <code>&lt;h1&gt;</code> será estilizado de acordo com a definição de estilo <code>#myHeader</code> na seção head:</p>
+        <div id="myHeader">
+          <h1>Meu Cabeçalho</h1>
+        </div>
+      </div>
+    </div>
+
+    <h2>Iframes HTML</h2>
+    <p>Um iframe HTML é usado para exibir uma página da web dentro de uma página da web.</p>
+
+    <div>
+      <h3>Sintaxe HTML Iframe</h3>
+      <p>A tag HTML <code>&lt;iframe&gt;</code> especifica um quadro embutido.</p>
+      <p>Um quadro embutido é usado para incorporar outro documento no documento HTML atual.</p>
+      <h4>Sintaxe</h4>
+      <pre>&lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;</pre>
+      <p>Dica: É uma boa prática sempre incluir um atributo <code>title</code> para o elemento <code>&lt;iframe&gt;</code>. Isso é usado por leitores de tela para ler qual é o conteúdo do iframe.</p>
+    </div>
+
+    <div>
+      <h3>Iframe - Definir Altura e Largura</h3>
+      <p>Use os atributos <code>height</code> e <code>width</code> para especificar o tamanho do iframe.</p>
+      <p>A altura e a largura são especificadas em pixels por padrão:</p>
+      <pre>&lt;iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"&gt;&lt;/iframe&gt;</pre>
+    </div>
+
+    
+    <h2>HTMLJavaScript</h2>
+    <p>JavaScript torna as páginas HTML mais dinâmicas e interativas.</p>
+
+    <h3>Exemplo</h3>
+    <p>My First JavaScript</p>
+    <button onclick="document.getElementById('datetime').innerHTML = Date()">Click me to display Date and Time</button>
+
+    <h3>A tag HTML &lt;script&gt;</h3>
+    <p>A tag HTML &lt;script&gt; é usada para definir um script do lado do cliente (JavaScript).</p>
+    <p>O &lt;script&gt; elemento contém instruções de script ou aponta para um arquivo de script externo por meio do <code>src</code> atributo.</p>
+    <p>Os usos comuns do JavaScript são manipulação de imagens, validação de formulários e alterações dinâmicas de conteúdo.</p>
+    <p>Para selecionar um elemento HTML, o JavaScript geralmente usa o <code>document.getElementById()</code> método.</p>
+    <p>Este exemplo de JavaScript escreve "Olá JavaScript!" em um elemento HTML com id="demo":</p>
+    <pre><code>&lt;script&gt;
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    &lt;/script&gt;</code></pre>
+    <p>Dica: você pode aprender muito mais sobre JavaScript em nosso <a href="https://www.example.com/tutorial-javascript/">Tutorial de JavaScript</a>.</p>
+
+    <h3>Um gostinho de JavaScript</h3>
+    <p>Aqui estão alguns exemplos do que o JavaScript pode fazer:</p>
+    <pre><code>JavaScript pode alterar o conteúdo:
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";</code></pre>
+
+    <p id="datetime"></p>
+    <p id="demo"></p>
+
+    <h2>Elementos Semânticos HTML</h2>
+    <p>Elementos semânticos = elementos com significado.</p>
+
+    <h3>O que são elementos semânticos?</h3>
+    <p>Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.</p>
+    <p>Exemplos de elementos não semânticos: <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> - Não diz nada sobre o seu conteúdo.</p>
+    <p>Exemplos de elementos semânticos: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code> e <code>&lt;article&gt;</code> - Define claramente seu conteúdo.</p>
+
+    <h3>Elementos Semânticos em HTML</h3>
+    <p>Muitos sites contêm código HTML como: <code>&lt;div id="nav"&gt;</code>, <code>&lt;div class="header"&gt;</code>, <code>&lt;div id="footer"&gt;</code> para indicar navegação, cabeçalho e rodapé.</p>
+    <p>Em HTML existem alguns elementos semânticos que podem ser usados para definir diferentes partes de uma página web:</p>
+    <ul>
+        <li>&lt;article&gt;</li>
+        <li>&lt;aside&gt;</li>
+        <li>&lt;details&gt;</li>
+        <li>&lt;figcaption&gt;</li>
+        <li>&lt;figure&gt;</li>
+        <li>&lt;footer&gt;</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;main&gt;</li>
+        <li>&lt;mark&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;section&gt;</li>
+        <li>&lt;summary&gt;</li>
+        <li>&lt;time&gt;</li>
+    </ul>
+
+    <h3>Elementos Semânticos HTML</h3>
+    <p>Elemento HTML &lt;section&gt;</p>
+    <p>O &lt;section&gt; elemento define uma seção em um documento.</p>
+    <p>De acordo com a documentação HTML do W3C: "Uma seção é um agrupamento temático de conteúdo, normalmente com um título."</p>
+    <p>Exemplos de onde um &lt;section&gt; elemento pode ser usado:</p>
+    <ul>
+        <li>Capítulos</li>
+        <li>Introdução</li>
+        <li>Novos itens</li>
+        <li>Informações de contato</li>
+    </ul>
+    <p>Uma página da web normalmente pode ser dividida em seções para introdução, conteúdo e informações de contato.</p>
+    <h4>Exemplo</h4>
+    <p>Duas seções em um documento:</p>
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+
+    <section>
+        <h1>WWF's Panda symbol</h1>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>
     </div>
 </body>
 </html>
