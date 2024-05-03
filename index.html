@@ -667,13 +667,18 @@
 
     <h3>O que são elementos semânticos?</h3>
     <p>Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.</p>
+
     <p>Exemplos de elementos não semânticos: <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> - Não diz nada sobre o seu conteúdo.</p>
+
     <p>Exemplos de elementos semânticos: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code> e <code>&lt;article&gt;</code> - Define claramente seu conteúdo.</p>
 
     <h3>Elementos Semânticos em HTML</h3>
     <p>Muitos sites contêm código HTML como: <code>&lt;div id="nav"&gt;</code>, <code>&lt;div class="header"&gt;</code>, <code>&lt;div id="footer"&gt;</code> para indicar navegação, cabeçalho e rodapé.</p>
+
     <p>Em HTML existem alguns elementos semânticos que podem ser usados para definir diferentes partes de uma página web:</p>
-    <ul>
+    
+    <div class="list-container">
+      <ul>
         <li>&lt;article&gt;</li>
         <li>&lt;aside&gt;</li>
         <li>&lt;details&gt;</li>
@@ -681,37 +686,407 @@
         <li>&lt;figure&gt;</li>
         <li>&lt;footer&gt;</li>
         <li>&lt;header&gt;</li>
-        <li>&lt;main&gt;</li>
-        <li>&lt;mark&gt;</li>
-        <li>&lt;nav&gt;</li>
-        <li>&lt;section&gt;</li>
-        <li>&lt;summary&gt;</li>
-        <li>&lt;time&gt;</li>
+      <li>&lt;main&gt;</li>
+      <li>&lt;mark&gt;</li>
+      <li>&lt;nav&gt;</li>
+      <li>&lt;section&gt;</li>
+      <li>&lt;summary&gt;</li>
+      <li>&lt;time&gt;</li>
     </ul>
+    </div>
 
-    <h3>Elementos Semânticos HTML</h3>
-    <p>Elemento HTML &lt;section&gt;</p>
-    <p>O &lt;section&gt; elemento define uma seção em um documento.</p>
+    <h2>Elementos Semânticos HTML</h2>
+
+    <h3>Elemento HTML &lt;section&gt;</h3>
+    <p>O <code>&lt;section&gt;</code> elemento define uma seção em um documento.</p>
+
     <p>De acordo com a documentação HTML do W3C: "Uma seção é um agrupamento temático de conteúdo, normalmente com um título."</p>
-    <p>Exemplos de onde um &lt;section&gt; elemento pode ser usado:</p>
-    <ul>
+
+    <p>Exemplos de onde um <code>&lt;section&gt;</code> elemento pode ser usado:</p>
+    <div class="list-container">
+      <ul>
         <li>Capítulos</li>
         <li>Introdução</li>
         <li>Novos itens</li>
         <li>Informações de contato</li>
-    </ul>
-    <p>Uma página da web normalmente pode ser dividida em seções para introdução, conteúdo e informações de contato.</p>
-    <h4>Exemplo</h4>
-    <p>Duas seções em um documento:</p>
-    <section>
-        <h1>WWF</h1>
-        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+      </ul>
+    </div>
+      
+      <p>Uma página da web normalmente pode ser dividida em seções para introdução, conteúdo e informações de contato.</p>
+      
+      <h4>Exemplo</h4>
+      <p>Duas seções em um documento:</p>
+      
+      <section>
+      <h1>WWF</h1>
+      <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
     </section>
 
     <section>
-        <h1>WWF's Panda symbol</h1>
-        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+      <h1>WWF's Panda symbol</h1>
+      <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
     </section>
+    
+    <h2>Guia de Estilo HTML</h2>
+
+    <p>Um código HTML consistente, limpo e organizado é fundamental para melhorar a legibilidade e compreensão do código por parte de outros desenvolvedores.</p>
+
+    <h2>Diretrizes para um bom código HTML</h2>
+
+    <h3>Sempre declarar o tipo de documento</h3>
+    <p>É essencial declarar o tipo de documento como a primeira linha do seu código HTML. O tipo de documento correto para HTML é:</p>
+
+    <pre>&lt;!DOCTYPE html&gt;</pre>
+
+    <h3>Usar nomes de elementos em letras minúsculas</h3>
+    <p>O HTML permite misturar letras maiúsculas e minúsculas nos nomes dos elementos. <br>No entanto, é altamente recomendado utilizar nomes de elementos em letras minúsculas por diversos motivos:</p>
+
+    <div class="list-container">
+      <ul>
+        <li>Misturar maiúsculas e minúsculas prejudica a consistência visual do código.</li>
+        <li>Os desenvolvedores têm uma convenção de utilizar nomes em minúsculas.</li>
+        <li>Letras minúsculas proporcionam uma aparência mais limpa e organizada.</li>
+        <li>São mais fáceis de escrever e menos propensas a erros de digitação.</li>
+      </ul>
     </div>
+
+    <h3>Exemplo:</h3>
+
+    <p>Bom:</p>
+    <pre>&lt;body&gt;
+      &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;</pre>
+
+    <p>Ruim:</p>
+    <pre>&lt;BODY&gt;
+      &lt;P&gt;This is a paragraph.&lt;/P&gt;
+    &lt;/BODY&gt;</pre>
+
+    <p>A adoção dessas diretrizes contribui significativamente para a consistência e legibilidade do seu código HTML, <br>facilitando a colaboração com outros desenvolvedores e a manutenção do projeto a longo prazo.</p>
+
+    <h2>Entidades HTML</h2>
+
+    <p>Caracteres reservados em HTML devem ser substituídos por entidades:</p>
+      <div class="list-container">
+    <ul>
+      <li>&lt; (menos que) = &lt;</li>
+      <li>&gt; (maior que) = &gt;</li>
+    </ul>
+  </div>
+
+    <h3>Entidades de caracteres HTML</h3>
+    <p>Alguns caracteres são reservados em HTML. Se você usar os sinais de menor que (&lt;) ou maior que (&gt;) em seu texto HTML, o navegador poderá misturá-los com tags.</p>
+
+    <p>Nomes ou números de entidades podem ser usados ​​para exibir caracteres HTML reservados. Os nomes das entidades são assim: <code>&amp;entity_name;</code> Os números das entidades são assim: <code>&amp;#entity_number;</code></p>
+
+    <h2>Símbolos HTML</h2>
+    <p>Símbolos ou letras que não estão presentes no teclado podem ser adicionados ao HTML usando entidades.</p>
+
+    <h3>Entidades de símbolos HTML</h3>
+    <p>Muitos símbolos matemáticos, técnicos e monetários não estão presentes em um teclado normal. Para adicionar esses símbolos a uma página HTML, você pode usar o nome da entidade ou o número da entidade (uma referência decimal ou hexadecimal) para o símbolo:</p>
+
+    <p>Exemplo:</p>
+
+    <p>Exibir o sinal do euro:</p>
+    <p>I will display &euro;</p>
+    <p>I will display &#8364;</p>
+    <p>I will display &#x20AC;</p>
+
+    <p>Será exibido como:</p>
+    <p>Vou mostrar €</p>
+    <p>Vou mostrar €</p>
+    <p>Vou mostrar €</p>
+
+    <h2>Usando Emojis em HTML</h2>
+
+    <p>Emojis são caracteres do conjunto de caracteres UTF-8: 😄 😍 💗</p>
+    <div class="table-container">
+    <table>
+      <caption>Emoji	Valor</caption>
+      <tr>
+        <th>Emoji</th>
+        <th>Valor</th>
+      </tr>
+      <tr>
+        <td>🗻</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>🗼</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>🗽</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>🗾</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>🗿</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>😀</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>😁</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>😂</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>😃</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>😄</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>😅</td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+    <p>Referência completa de emojis HTML: <a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">Lista completa de emojis HTML</a></p>
+
+    <h3>Exemplos de emojis HTML</h3>
+
+    <p>🚀🚁🚂🚃🚄</p>
+    <p>Símbolos de transporte de emojis HTML</p>
+
+    <p>💺💻💼💽💾</p>
+
+    <h2>Codificação HTML (conjuntos de caracteres)</h2>
+
+    <p>Para exibir uma página HTML corretamente, um navegador da Web deve saber qual conjunto de caracteres usar.</p>
+
+    <h3>O atributo HTML charset</h3>
+    <p>O conjunto de caracteres é especificado na <code>&lt;meta&gt;</code> tag:</p>
+
+    <p>Exemplo:</p>
+    <pre>&lt;meta charset="UTF-8"&gt;</pre>
+
+    <p>A especificação HTML5 incentiva os desenvolvedores web a usar o conjunto de caracteres UTF-8. UTF-8 cobre quase todos os caracteres e símbolos do mundo!</p>
+
+    <p><a href="https://unicode.org/" target="_blank">Crescimento da Web Unicode</a></p>
+
+    <p><a href="https://www.utf8-chartable.de/" target="_blank">Referência UTF-8 completa</a></p>
+
+    <h3>O conjunto de caracteres ASCII</h3>
+    <p>ASCII foi o primeiro padrão de codificação de caracteres para a web. Definiu 128 caracteres diferentes que poderiam ser usados ​​na internet:</p>
+    <div class="list-container">
+    <ul>
+      <li>Letras inglesas (AZ)</li>
+      <li>Números (0-9)</li>
+      <li>Caracteres especiais como ! $ + - ( ) @ &lt; &gt;.</li>
+    </ul>
+  </div>
+
+    <h3>O conjunto de caracteres ANSI</h3>
+    <p>ANSI (Windows-1252) era o conjunto de caracteres original do Windows:</p>
+  <div class="list-container">
+    <ul>
+      <li>Idêntico ao ASCII para os primeiros 127 caracteres</li>
+      <li>Caracteres especiais de 128 a 159</li>
+      <li>Idêntico ao UTF-8 de 160 a 255</li>
+    </ul>
+  </div>
+    <p><code>&lt;meta charset="Windows-1252"&gt;</code></p>
+
+    <h2>Localizadores Uniformes de Recursos HTML</h2>
+
+    <p>URL é outra palavra para endereço da web.</p>
+
+    <p>Uma URL pode ser composta por palavras (por exemplo, w3schools.com) ou por um endereço de protocolo de Internet (IP) (por exemplo, 192.68.20.50).</p>
+
+    <p>A maioria das pessoas insere o nome quando navega, porque os nomes são mais fáceis de lembrar do que os números.</p>
+
+    <h3>URL - Localizador Uniforme de Recursos</h3>
+
+    <p>Os navegadores da Web solicitam páginas de servidores da Web usando um URL.</p>
+
+    <p>Um Uniform Resource Locator (URL) é usado para endereçar um documento (ou outros dados) na web.</p>
+
+    <p>Um endereço da web como <code><a href="https://www.w3schools.com/html/default.asp">https://www.w3schools.com/html/default.asp</a></code> segue estas regras de sintaxe:</p>
+    <div class="list-container">
+    <ul>
+      <li><strong>esquema</strong> - define o tipo de serviço de Internet (o mais comum é http ou https )</li>
+      <li><strong>prefixo</strong> - define um prefixo de domínio (o padrão para http é www )</li>
+      <li><strong>domínio</strong> - define o nome de domínio da Internet (como w3schools.com)</li>
+      <li><strong>porta</strong> - define o número da porta no host (o padrão para http é 80 )</li>
+      <li><strong>caminho</strong> - define um caminho no servidor (se omitido: o diretório raiz do site)</li>
+      <li><strong>nome do arquivo</strong> - define o nome de um documento ou recurso</li>
+    </ul>
+    </div>
+
+    <h2>HTML versus XHTML</h2>
+
+    <p>XHTML é uma versão do HTML mais rígida e baseada em XML.</p>
+
+    <h3>O que é XHTML?</h3>
+    <div class="list-container">
+    <ul>
+      <li>XHTML significa Extensible Hyper Text Markup Language​​</li>
+      <li>XHTML é uma versão de HTML mais rígida e baseada em XML</li>
+      <li>XHTML é HTML definido como um aplicativo XML</li>
+      <li>XHTML é suportado por todos os principais navegadores</li>
+    </ul>
+  </div>
+
+    <h3>Por que XHTML?</h3>
+    <p>XML é uma linguagem de marcação onde todos os documentos devem ser marcados corretamente (ser "bem formados").</p>
+    <p>O XHTML foi desenvolvido para tornar o HTML mais extensível e flexível para trabalhar com outros formatos de dados (como XML). Além disso, os navegadores ignoram erros nas páginas HTML e tentam exibir o site mesmo que apresente alguns erros de marcação. Portanto, o XHTML vem com um tratamento de erros muito mais rígido.</p>
+    <p>Se você deseja estudar XML, leia nosso <a href="https://www.w3schools.com/xml/" target="_blank">Tutorial de XML</a>.</p>
+
+    <h3>As diferenças mais importantes do HTML</h3>
+    <div class="list-container">
+    <ul>
+      <li><code>&lt;!DOCTYPE&gt;</code> é obrigatório</li>
+      <li>O atributo <code>xmlns</code> em <code>&lt;html&gt;</code> é obrigatório</li>
+      <li><code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code> e <code>&lt;body&gt;</code> são obrigatórios</li>
+      <li>Os elementos devem sempre estar adequadamente aninhados</li>
+      <li>Os elementos devem estar sempre fechados</li>
+      <li>Os elementos devem estar sempre em letras minúsculas</li>
+      <li>Os nomes dos atributos devem estar sempre em letras minúsculas</li>
+      <li>Os valores dos atributos devem sempre ser citados</li>
+      <li>A minimização de atributos é proibida</li>
+    </ul>
+    </div>
+
+    <h2>Um formulário HTML é usado para coletar a entrada do usuário.</h2>
+    <p>A entrada do usuário é geralmente enviada a um servidor para processamento.</p>
+
+    <h3>Exemplo:</h3>
+
+    <form action="/submit_form.php" method="post">
+      <label for="firstname">Primeiro Nome:</label><br>
+      <input type="text" id="firstname" name="firstname"><br>
+      <br>
+      <label for="sex">Sexo:</label><br>
+      <input type="radio" id="male" name="sex" value="male">
+      <label for="male">Masculo</label><br>
+      <input type="radio" id="female" name="sex" value="female">
+      <label for="female">Feminino</label><br>
+      <br>
+      <label for="lastname">Último Nome:</label><br>
+      <input type="text" id="lastname" name="lastname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <p>O elemento HTML <code>&lt;form&gt;</code> é usado para criar um formulário HTML para entrada do usuário:</p>
+
+    <pre>
+    &lt;form action="/submit_form.php" method="post"&gt;
+      . form elements .
+    &lt;/form&gt;
+    </pre>
+
+    <h2>Os elementos HTML &lt;form&gt;</h2>
+    <p>O elemento HTML &lt;form&gt; pode conter um ou mais dos seguintes elementos de formulário:</p>
+    <div class="list-container">
+    <ul>
+      <li>&lt;input&gt;</li>
+      <li>&lt;label&gt;</li>
+      <li>&lt;select&gt;</li>
+      <li>&lt;textarea&gt;</li>
+      <li>&lt;button&gt;</li>
+      <li>&lt;fieldset&gt;</li>
+      <li>&lt;legend&gt;</li>
+      <li>&lt;datalist&gt;</li>
+      <li>&lt;output&gt;</li>
+      <li>&lt;option&gt;</li>
+      <li>&lt;optgroup&gt;</li>
+    </ul>
+    </div>
+
+    <p>Você pode ver exemplos de cada um desses elementos em <a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">w3schools.com</a>.</p>
+
+    <h3>Exemplo de Uso de Elementos de Formulário:</h3>
+
+    <form action="/submit_form.php" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br><br>
+
+      <label for="password">Senha:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="age">Idade:</label><br>
+      <input type="number" id="age" name="age"><br><br>
+
+      <label for="gender">Sexo:</label><br>
+      <select id="gender" name="gender">
+        <option value="male">Masculo</option>
+        <option value="female">Feminino</option>
+      </select><br><br>
+
+      <label for="comment">Comentário:</label><br>
+      <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <h2>Atributos do formulário HTML</h2>
+
+    <p>Este capítulo descreve os diferentes atributos do elemento HTML &lt;form&gt;.</p>
+
+    <h3>O atributo de ação</h3>
+    <p>O <code>action</code> atributo define a ação a ser executada quando o formulário for enviado. <br>Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão enviar. No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado “action_page.php”. Este arquivo contém um script do lado do servidor que trata os dados do formulário:</p>
+
+    <h4>Exemplo:</h4>
+    <p>Ao enviar, envie os dados do formulário para "action_page.php":</p>
+
+    <form action="/action_page.php">
+      <label for="fname">Primeiro Nome:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Ultimo Nome:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <p>Você pode ver exemplos de cada um desses atributos em <a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">w3schools.com</a>.</p>
+
+    <h2>Multimídia HTML</h2>
+    <p>Multimídia na web é som, música, vídeos, filmes e animações.</p>
+    <h3>O que é multimídia?</h3>
+    <p>A multimídia vem em muitos formatos diferentes. Pode ser quase tudo que você pode ouvir ou ver, como imagens, músicas, sons, vídeos, discos, filmes, animações e muito mais.</p>
+    <p>As páginas da Web geralmente contêm elementos multimídia de diferentes tipos e formatos.</p>
+    <h3>Suporte ao navegador</h3>
+    <p>Os primeiros navegadores tinham suporte apenas para texto, limitado a uma única fonte em uma única cor.</p>
+    <p>Mais tarde vieram os navegadores com suporte para cores, fontes, imagens e multimídia!</p>
+    <h3>Formatos multimídia</h3>
+    <p>Elementos multimídia (como áudio ou vídeo) são armazenados em arquivos de mídia.</p>
+    <p>A maneira mais comum de descobrir o tipo de um arquivo é observar a extensão do arquivo.</p>
+    <p>Os arquivos multimídia possuem formatos e extensões diferentes como: .wav, .mp3, .mp4, .mpg, .wmv e .avi.</p>
+    <h3>Vídeo HTML</h3>
+    <p>O elemento HTML <code>&lt;video&gt;</code> é usado para mostrar um vídeo em uma página da web.</p>
+    <h4>Exemplo:</h4>
+    <p>Veja o vídeo abaixo:</p>
+    <video width="320" height="240" controls>
+      <source src="mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>O elemento HTML <code>&lt;video&gt;</code></p>
+    <p>Para mostrar um vídeo em HTML, use o <code>&lt;video&gt;</code> elemento:</p>
+    <h3>Áudio HTML</h3>
+    <p>O elemento HTML <code>&lt;audio&gt;</code> é usado para reproduzir um arquivo de áudio em uma página da web.</p>
+    <h4>O elemento HTML <code>&lt;audio&gt;</code></h4>
+    <p>Para reproduzir um arquivo de áudio em HTML, use o <code>&lt;audio&gt;</code> elemento:</p>
+    <h4>Exemplo:</h4>
+<audio controls>
+  <source src="horse.ogv" type="audio/ogg">
+
+</audio>
+    </div>
+
+    <footer>
+      <p>Você pode ver exemplos de cada um dos elemntos acima e mais coisas em <a href="https://www.w3schools.com/html/html_form_elements.asp" target="_blank">w3schools.com</a>.</p>
+    </footer>
 </body>
 </html>
